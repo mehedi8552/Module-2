@@ -1,7 +1,5 @@
 # Module-2
 
-# Module-2
-
 Assignment of Module 2 :
 
 1) DOM Manipulation

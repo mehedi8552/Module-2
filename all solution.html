@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>problem 1</h1>
+     <button onclick="myfun()">Tab</button>
+    <div id="mydiv"> This is initial content</div>
+    <script>
+        //problem 1
+       function myfun(){
+            var me = document.getElementById('mydiv');
+            me.innerHTML = ('New content is display')
+        }
+    </script> 
+
+    <h1>problem 2</h1>
+    <button onclick="mycount()">Click</button>
+    <p id="pera">Count:</p>
+    <script>
+        //problem 2
+        count = 0;
+        function mycount(){
+            count ++;
+            document.getElementById('pera').textContent = "Count:"+ count;
+        }
+    </script> 
+
+   
+     <h1>problem 3</h1>
+    <img height="400px" width="400px" id="img" src="https://i1.sndcdn.com/avatars-000361229228-y3j5wi-t500x500.jpg" alt="">
+    <br>
+    <button onclick="img1()">Image 1</button>
+    <button onclick="img2()">Image 2</button>
+    <script>
+        //problem 3
+        function img1(){
+            document.getElementById('img').src = "https://i1.sndcdn.com/avatars-000361229228-y3j5wi-t500x500.jpg";
+        }
+
+        function img2(){
+            document.getElementById('img').src = "https://images.squarespace-cdn.com/content/v1/558841c4e4b04f6516e82467/1619621305916-BLKM7QE5JWXN25I4IIL1/TIGER_alternate_logo.jpg";
+        }
+
+    </script> 
+     <h1>problem 4 in console</h1>
+    <script>
+        //problem 4
+        fetch('https://jsonplaceholder.typicode.com/posts')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    </script> 
+
+
+    
+    </body>
+
+</html>
